@@ -539,7 +539,7 @@ modal.addEventListener('click', modalClose, false);
 // When the user scrolls down 10px from the top of the document, show the button
 
 $(document).ready(function(){ 
-    $("html, body").animate({ scrollTop: 0 }, 600); 
+    
     $(window).scroll(function(){ 
         if ($(this).scrollTop() > 10) { 
             $('#scroll').fadeIn(); 
@@ -552,3 +552,9 @@ $(document).ready(function(){
         return false; 
     }); 
 });
+
+function refreshPage() {
+    if ($(this).scrollTop() > 10) { 
+        $("html, body").animate({ scrollTop: 0 }, 300); 
+    }
+}
