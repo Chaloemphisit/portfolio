@@ -106,46 +106,6 @@ a {
   }
 }
 
-#about {
-  background-color: $light-white;
-  margin: 0;
-  min-height: 70%;
-  padding: 80px 0;
-
-  h2 {
-    display: block;
-    font-size: 38px;
-    font-weight: 400;
-    letter-spacing: 5px;
-    margin: 0 !important;
-    margin-after: .83em;
-    margin-before: .83em;
-    padding-bottom: 50px;
-    // position: relative;
-    text-align: center;
-
-    &after {
-      bottom: 30px;
-      content: "";
-      display: block;
-      height: 3px;
-      left: 50%;
-      position: absolute;
-      transform: translateX(-50%);
-      width: 100px;
-    }
-  }
-
-  div {
-    font-family: $font-about;
-    font-size: 18px;
-    font-weight: 100;
-    letter-spacing: 1px;
-    line-height: 1.4em;
-    text-indent: 25px;
-  }
-}
-
 #contact {
   background-color: $dark-grey;
   font-size: 25px;

@@ -526,8 +526,6 @@ span.onclick = function () {
     modalClose();
 }
 
-
-
 // Handle ESC key (key code 27)
 document.addEventListener('keyup', function(e) {
     if (e.keyCode == 27) {
@@ -537,3 +535,19 @@ document.addEventListener('keyup', function(e) {
 
 // Handle click on the modal container
 modal.addEventListener('click', modalClose, false);
+
+// When the user scrolls down 10px from the top of the document, show the button
+
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 10) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
