@@ -492,7 +492,7 @@ function handleEscKey() {
 
 function handleTyping() {
     $(".element").typed({
-        strings: ["and I'm a sophomore", "in faculty of Science", "with a major in Computer Science."],
+        strings: ["and I'm a sophomore", "in faculty of Science", "with a major in Computer Science.", "I am a C#.NET Developer"],
         typeSpeed: 50,
         starDelay: 200,
         backDelay: 600,
