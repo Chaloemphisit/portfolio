@@ -27,7 +27,7 @@
 
     "use strict";
 
-    var Typed = function (el, options) {
+    var Typed = (el, options) => {
 
         // chosen element to manipulate text
         this.el = $(el);
